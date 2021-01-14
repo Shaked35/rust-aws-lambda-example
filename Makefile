@@ -23,7 +23,7 @@ package-%: build $(ARTIFACT_DIR)/%
 all-package: package-count package-pull package-decide
 
 deploy-%: package-%
-	aws lambda update-function-code --function-name "adwords_$*" --zip-file fileb://$(PACKAGE_DIR)/$*.zip
+	aws lambda update-function-code --function-name "add_your_function_name_$*" --zip-file fileb://$(PACKAGE_DIR)/$*.zip
 
-all-deploy: deploy-data_lake deploy-reports deploy-config_builder deploy-update_google_report_types
+all-deploy: deploy-my_lambda
 
