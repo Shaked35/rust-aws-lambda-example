@@ -1,0 +1,40 @@
+[package]
+name = "rust-aws-lambda-example"
+version = "0.1.0"
+authors = ["shaked <shakeda35@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aws_lambda_events = "0.3.0"
+uuid = { version = "0.7.4", features = ["serde", "v4"] }
+time = { version = "0.2", default-features = false }
+num = "0.2.1"
+chrono = { version = "0.4", features = ["serde"] }
+rusoto_core = "0.42.0"
+rusoto_s3 = "0.42.0"
+rusoto_sqs = "0.42.0"
+rusoto_athena = "0.42.0"
+serde = { version = "1.0", features = ["derive"] }
+rusoto_dynamodb =  "0.42.0"
+tokio-core = "0.1.17"
+tokio = { version = "0.2", features = ["macros", "tcp", "dns", "io-util"] }
+lambda_runtime = "0.2"
+simple-error  = "0.2.1"
+futures = "0.3"
+parquet = "0.16.0"
+csv = "1"
+serde_dynamodb = "0.2.0"
+Inflector = "0.3.3"
+arrow =  "0.14.0"
+serde_json = "1.0.50"
+tempfile = "3.1.0"
+serde_derive = "^1"
+log = "^0.4"
+simple_logger = "^1"
+rustc-serialize = "0.3"
+openssl = { version = "0.10", features = ["vendored"] }
+reqwest = { version = "0.10.0-alpha.2", features = ["blocking"] }
+flate2 = { version = "0.2", features = ["tokio"] }
+async-std = "0.99.6"
